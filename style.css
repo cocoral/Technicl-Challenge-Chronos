@@ -1,0 +1,584 @@
+/* Base Styles -------------------- */
+
+*{
+box-sizing: border-box;
+}
+
+html {
+  
+  font-size: 0.8em;
+  margin:0;
+}
+
+body {
+  background-color: white;
+  font-family: 'lato', sans-serif;;
+  font-weight: 400;
+  line-height: 1.45;
+  color:#325163;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  margin: 1em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+  font-weight:700;
+  padding-top:60px;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight:700;
+
+}
+
+h3 {
+  font-size: 1em;
+  line-height:90%;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+
+a{
+padding:5px;
+
+}
+
+ul,
+ol {
+  margin: 15px 0;
+
+  
+}
+
+li {
+  margin-bottom: 5px;
+  display:inline;
+  padding:2px 0.8rem;
+}
+
+
+
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  text-decoration: none;
+}
+
+
+a:hover {
+  background-color:#325163; 
+}
+
+.footer a{
+  background-color: white;
+}
+
+a:active {
+  color: paleturquoise;
+}
+
+h1.underline:after{
+
+  display: block;
+    margin: 12px auto 30px;
+    width: 150px;
+    height: 2px;
+    background: white;
+    content: "";
+}
+
+.team h1.underline:after,
+.expertise h1.underline:after,
+.client h1.underline:after
+{
+    display: block;
+    margin: 12px auto 30px;
+    width: 150px;
+    height: 2px;
+    background: #325163;
+    content: "";
+
+}
+
+
+/* Main Styles --------------------- */
+
+
+.headerContainer,
+.serviceContainer,
+.teamContainer,
+.contactContainer,
+.expertiseContainer,
+.workContainer,
+.clientContainer,
+.footer{
+  width:100%;
+  max-width: 1024px;
+  margin:auto;
+  overflow: auto;
+  text-align: center;
+}
+
+.header,
+.work{
+  background-color: #537a81;
+  text-align: center;
+  overflow: auto;
+
+}
+
+.contact{
+background-color: #325163;
+}
+
+.team,
+.client{
+  overflow: auto;
+  background-color: #f2f2f4;
+  padding-bottom: 100px;
+}
+
+.service{
+  background-color:#325163; 
+  overflow:auto;
+  padding-bottom: 40px;
+}
+
+
+
+.logoAtTop,
+.menu{
+  font-size: 1rem;
+  padding:30px 0 30px 30px;
+}
+
+.white{
+color:white;
+}
+
+.chronosLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description{
+
+  font-size: 1.44em;
+  font-weight: 400;
+  text-align: center;
+  margin:0.5em 0;
+}
+
+.myButton {
+  -moz-box-shadow: -2px 2px 0px 0px #1439a8;
+  -webkit-box-shadow: -2px 2px 0px 0px #325163;
+  box-shadow: -2px 2px 0px 0px #325163;
+  border:2px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  background-color: #537a81;
+  font-size:13px;
+  font-weight:bold;
+  padding:8px 15px;
+  text-decoration:none;
+  margin:30px auto 60px;
+  display: block;
+ }
+
+.myButton:hover {
+  background-color:#325163;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+.service .columns{
+  width:33.33%;
+  padding:60px 3%;
+  text-align: center;
+  }
+
+
+
+.team .columns{
+  width:25%;
+  padding:15px 3%;
+  }
+
+.team .columns h3,
+.client .columns h3{
+color:#d74963;
+}
+
+
+
+.expertise{
+overflow: auto;
+}
+
+.expertise .columns{
+  width:25%;
+  padding:15px 3% 100px;
+  }
+
+.expertiseNum1{
+  background:url('img/chronos-expertise-webdesign.png') no-repeat;
+  text-align: center;
+  background-position:center;
+  background-size: 80%;
+}
+
+.expertiseNum2{
+  background:url('img/chronos-expertise-htmlcss.png') no-repeat;
+  text-align: center;
+  background-position:center;
+  background-size: 80%;
+}
+
+.expertiseNum3{
+  background:url('img/chronos-expertise-gdesign.png') no-repeat;
+  text-align: center;
+  background-position:center;
+  background-size: 80%;
+}
+
+.expertiseNum4{
+  background:url('img/chronos-expertise-uiux.png') no-repeat;
+  text-align: center;
+  background-position:center;
+  background-size: 80%;
+}
+
+.expertise .columns h1{
+  padding-top:40%;
+  padding-bottom: 40%;
+}
+
+
+
+.work .buttons{
+  border:2px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  background-color: #537a81;
+  font-size:13px;
+  font-weight:bold;
+  padding:5px 15px;
+  text-decoration:none;
+  margin:20px 5px 20px;
+}
+
+.work .buttons:hover{
+    background-color: #ffffff;
+    color:#537a81;
+}
+
+.work .columns{
+  width:50%;
+  padding:30px 5%;
+  }
+
+.client .columns{
+width: 50%;
+padding: 50px 20px;
+
+}
+
+
+.client .columns h2,
+.client .columns h3,
+.client .columns p{
+  text-align: left;
+}
+
+
+
+.form{
+width: 50%;
+margin:50px;
+}
+
+form #name,
+form #email,
+form #message
+{
+width:100%;
+padding:10px;
+margin:10px;
+border:0;
+background-color: #1c3949;
+}
+
+#message{
+height:150px;
+}
+
+.buttonNoShadow{
+  -moz-box-shadow: -2px 2px 0px 0px #1439a8;
+  -webkit-box-shadow: -2px 2px 0px 0px #325163;
+  box-shadow: -2px 2px 0px 0px #325163;
+  border:2px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  background-color: #325163;
+  font-size:13px;
+  font-weight:bold;
+  padding:5px 15px;
+  text-decoration:none;
+  margin:0 auto 60px;
+}
+
+.buttonNoShadow:hover {
+  background-color:#537a81;
+}
+
+.buttonNoShadow:active {
+  position:relative;
+  top:1px;
+}
+
+.chronosLogoAtContact{
+max-width:230px;
+min-width: 150px;
+width:100%;
+
+}
+
+h2.headOffice{
+text-align: left;
+}
+
+div.officeInfo{
+text-align: left;
+padding-top:50px;
+overflow: auto;
+}
+
+.inlineBlock{
+  display:inline-block;
+}
+
+p.inlineBlock{
+margin:0;
+position:relative;
+top:-8px;
+}
+
+.footer{
+  padding:30px 30px 30px 30px;
+}
+
+.bottomLogo{
+padding-right:12%;
+
+}
+
+.social{
+  display:block;
+  margin:auto;
+}
+
+
+
+/* float --------------------- */
+.menu{
+  float:right;
+}
+
+
+.logoAtTop{
+  float:left;
+}
+
+
+.columns{
+  float:left;
+}
+
+/*.workContainer div:nth-last-child(2)
+{
+float:none;
+}
+*/
+.client img{
+  float:left;
+}
+
+
+.form{
+float:left;
+}
+
+.contact button{
+float:right;
+
+}
+
+.bottomLogo,
+.social{
+  float:left;
+}
+
+
+.copyright{
+  padding-top: 15px;
+  margin:0;
+  float:right;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+
+
+
+
+
+/* media queries --------------------- */
+
+@media(max-width: 688px){
+
+  .menu{
+    margin:0;
+    float:left;
+    padding:0 30px 30px 30px;
+  }
+
+  .team .columns{
+    width:50%;
+    padding:15px 3%;
+  }
+
+  .form{
+  width: 40%;
+  margin:50px 10% 50px 50px;
+  }
+
+  .copyright{
+    float:left;
+    clear:both;
+  }
+
+}
+
+@media(max-width:480px){
+  .clearfix{
+  clear:both;
+  }
+
+  .logoAtTop, 
+  .menu {
+    float:none;
+    margin:auto;
+  }
+
+  li{
+  display:block;
+  text-align: center;
+  }
+
+  .chronosLogo{
+    width:60%;
+  }
+
+  .description{
+      font-size: 1rem;
+      line-height: 90%;
+      font-style: italic;
+      font-weight: 400;
+  }
+
+  .myButton{
+    font-size: 10px;
+  }
+
+  .columns{
+    padding:3% 0;
+    width: 80%;
+    float:none;
+    margin:auto; 
+    overflow:auto; 
+  }
+
+  .service img{
+  padding-top: 30px;
+  }
+
+
+  .form{
+    width: 80%;
+    margin:50px 50px 0 50px;
+  }
+
+  .contact .officeInfo{
+    display: block;
+    width:100%;
+    padding: 0 50px 100px 60px;
+    text-align: center;
+  }
+
+  h2.headOffice {
+    text-align: center;
+}
+
+  .submitButton{
+  float:none;
+
+  }
+
+  .footer{
+    padding-left: 0;
+  }
+
+  .bottomLogo,
+  .social,
+  .copyright{
+    float: none;
+    margin:auto;
+    padding:0;
+    }
+
+  .social img{
+    padding-top: 15px;
+  }
+
+  .footer a{
+
+    padding:0;
+  }
+
+}
+
+
+
+
+
